@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ExpenseTracker" />
+        <module name="expense-tracker" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="expense-tracker" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
