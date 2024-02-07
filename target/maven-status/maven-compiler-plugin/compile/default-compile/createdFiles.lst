@@ -1,0 +1,11 @@
+entity\User.class
+servlet\LogoutServlet.class
+servlet\UpdateExpenseServlet.class
+servlet\DeleteExpenseServlet.class
+dao\ExpenseDao.class
+entity\Expense.class
+servlet\RegisterServlet.class
+dao\UserDao.class
+servlet\SaveExpenseServlet.class
+db\HibernateUtil.class
+servlet\LoginServlet.class
