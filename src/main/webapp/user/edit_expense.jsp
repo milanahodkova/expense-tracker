@@ -1,6 +1,6 @@
 <%@ page import="dao.ExpenseDao" %>
 <%@ page import="org.hibernate.Hibernate" %>
-<%@ page import="db.HibernateUtil" %>
+<%@ page import="util.HibernateUtil" %>
 <%@ page import="entity.Expense" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

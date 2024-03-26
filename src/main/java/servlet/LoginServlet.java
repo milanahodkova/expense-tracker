@@ -1,7 +1,7 @@
 package servlet;
 
 import dao.UserDao;
-import db.HibernateUtil;
+import util.HibernateUtil;
 import entity.User;
 
 import javax.servlet.ServletException;

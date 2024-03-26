@@ -1,9 +1,8 @@
 package servlet;
 
 import dao.UserDao;
-import db.HibernateUtil;
+import util.HibernateUtil;
 import entity.User;
-import org.hibernate.SessionFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

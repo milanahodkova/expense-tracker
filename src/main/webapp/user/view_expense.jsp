@@ -1,5 +1,5 @@
 <%@ page import="dao.ExpenseDao" %>
-<%@ page import="db.HibernateUtil" %>
+<%@ page import="util.HibernateUtil" %>
 <%@ page import="entity.User" %>
 <%@ page import="entity.Expense" %>
 <%@ page import="java.util.List" %><%--
