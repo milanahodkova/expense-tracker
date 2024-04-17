@@ -5,17 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>ExpenseTracker</artifactId>
+    <artifactId>expense-tracker</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
-        <jstl.version>1.2</jstl.version>
         <jakarta.servlet.version>5.0.0</jakarta.servlet.version>
-        <javax.servlet.version>4.0.1</javax.servlet.version>
-        <javax.servlet.jsp.version>2.0</javax.servlet.jsp.version>
-        <javax.servlet.jsp.jstl.version>1.2</javax.servlet.jsp.jstl.version>
-        <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
+        <jakarta.servlet.jsp.jstl.version>3.0.0</jakarta.servlet.jsp.jstl.version>
         <hibernate.version>5.4.32.Final</hibernate.version>
         <hibernate.entitymanager.version>5.6.15.Final</hibernate.entitymanager.version>
         <mysql.version>8.0.33</mysql.version>
@@ -33,9 +29,14 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>${javax.servlet.jstl.version}</version>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>${jakarta.servlet.jsp.jstl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>3.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -82,18 +83,6 @@
             <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>${jstl.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.1</version>
-            <scope>provided</scope>
-        </dependency>
-       
     </dependencies>
 
     <build>
